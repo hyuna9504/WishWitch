@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/colorAccent2"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="android.client.zxing.google.com.wish.Setting">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.72"
+            android:weightSum="1">
+
+            <TextView
+                android:text="SETTING"
+                android:textColor="@color/colorAccent4"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:textStyle="bold"
+                android:id="@+id/setting_text"
+                android:textSize="22dp"
+                android:gravity="center_vertical|center_horizontal"
+                />
+            <RelativeLayout
+                android:orientation="vertical"
+                android:keepScreenOn="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/location_red_box"
+                    android:id="@+id/imageView6"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.30"/>
+
+                <TextView
+                    android:text="위치설정"
+                    android:textSize="13dp"
+                    android:textColor="@color/colorAccent3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/gps_setting"
+                    android:autoText="true"
+                    android:gravity="center"
+                    android:layout_alignBottom="@+id/imageView6"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/imageView6" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:text="푸쉬알림"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/push_alarm"
+                    android:layout_weight="2.5"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:text="On"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/on"
+                    android:layout_weight="1"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/on_off_icon"
+                    android:id="@+id/on_off"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:text="Off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/off"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/light_line"
+            android:id="@+id/light_line2"
+            android:layout_weight="0.72"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:text="          알람반경"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/alarm_area"
+                android:gravity="center_vertical"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="28dp"
+                    android:src="@drawable/alarm_setting_icon"
+                    android:id="@+id/alarm_setting"
+                    android:layout_weight="0.13"/>
+
+                <TextView
+                    android:text="200M"
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/alarm_area_value"
+                    android:layout_weight="0.24"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/light_line"
+            android:id="@+id/light_line1"
+            android:layout_weight="0.72"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:text="      반복설정"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:id="@+id/repear_setting"
+                android:layout_weight="0.75"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:text="On"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/on2"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/on_off_icon"
+                        android:id="@+id/on_off2"
+                        android:layout_weight="0.8"/>
+
+                    <TextView
+                        android:text="Off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/off2"
+                        android:layout_weight="1.38"
+                        android:layout_marginRight="30dp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginTop="25dp">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/check_icon"
+                            android:id="@+id/check_icon"
+                            />
+
+                        <TextView
+                            android:text="하루1번"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/text1"
+                            android:layout_weight="1"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/no_check_icon"
+                            android:id="@+id/no_check_icon1"
+                            />
+
+                        <TextView
+                            android:text="이틀1번"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/text2"
+                            android:layout_weight="1"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/no_check_icon"
+                            android:id="@+id/no_check_icon2"
+                            />
+
+                        <TextView
+                            android:text="일주일1번"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/text3"
+                            android:layout_weight="1"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/no_check_icon"
+                            android:id="@+id/no_check_icon3"
+                            />
+
+                        <TextView
+                            android:text="한달1번"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/text4"
+                            android:layout_weight="1"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

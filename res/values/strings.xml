@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">위시의 위치</string>
+    <string name="api_url">https://apis.daum.net/local/v1/search/keyword.xml?apikey=21b2fc9f251dee472597fc087fcdb828&amp;query=</string>
+    <string name="wish_title_hint">해야 할 일을 입력하세요.</string>
+    <string name="wish_title_label">제목</string>
+    <string name="wish_details_label">상세 내역</string>
+    <string name="wish_solved_label">해결됨</string>
+    <string name="date_picker_title">등록일자:</string>
+    <string name="menu_user">내 정보</string>
+    <string name="new_wish">새로운 위시</string>
+    <string name="action_alarm">알림 설정</string>
+    <string name="action_search">검색 설정</string>
+    <string name="subtitle_format">%1$s 건</string>
+    <string name="folder">폴더</string>
+    <string name="gps_setting">위치설정</string>
+    <string name="to_map_setting">직접설정</string>
+    <string name="to_api_setting">현재위치</string>
+    <string name="push_alarm">푸시알림</string>
+</resources>
+

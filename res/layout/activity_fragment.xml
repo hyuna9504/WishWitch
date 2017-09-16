@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/fragment_container"
+             android:layout_width="match_parent"
+             android:background="@color/colorAccent2"
+             android:layout_height="match_parent">
+
+    <!--<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="Add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:id="@+id/add_button"/>
+    </FrameLayout>-->
+
+</FrameLayout>

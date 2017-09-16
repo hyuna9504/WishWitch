@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.client.zxing.google.com.wish">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDzU2-_jmDsO0O65uznKJfaKeTb1ofa3xg" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" /> <!-- 태스크의 첫 액티비티로 액티비티를 시작한다. -->
+                <category android:name="android.intent.category.LAUNCHER" /> <!-- 액티비티가 어플리케이션의 런처에 표시되고 태스크의 첫 액티비티가 될 수 있다. -->
+            </intent-filter>
+        </activity>
+        <activity android:name=".Map" />
+        <activity android:name=".SearchList" />
+        <activity android:name=".NewWish" />
+        <activity android:name=".WishListActivity" />
+        <activity
+            android:name=".WishPagerActivity"
+            android:parentActivityName=".WishListActivity" />
+
+        <receiver android:name=".Receiver" />
+
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Setting" />
+        <activity android:name=".ChangeInfo"></activity>
+    </application>
+
+</manifest>
